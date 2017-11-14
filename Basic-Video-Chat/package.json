@@ -1,0 +1,29 @@
+{
+    "name": "OpenTokCordovaBasicVideoSample",
+    "displayName": "OpenTokCordovaBasicVideoSample",
+    "version": "1.0.0",
+    "description": "A sample Apache Cordova application that uses OpenTok to power a 1:1 video chat.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Manik Sachdeva",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "Cordova-Plugin-OpenTok": "git+https://github.com/msach22/cordova-plugin-opentok.git",
+        "com.tokbox.cordova.opentok": "https://github.com/msach22/cordova-plugin-opentok",
+        "cordova-android": "^6.2.3",
+        "cordova-ios": "^4.4.0",
+        "cordova-plugin-whitelist": "^1.3.3"
+    },
+    "cordova": {
+        "plugins": {
+            "com.tokbox.cordova.opentok": {},
+            "cordova-plugin-whitelist": {}
+        },
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    }
+}
