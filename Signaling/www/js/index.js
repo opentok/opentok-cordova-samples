@@ -27,12 +27,7 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-      
-        // Set Credentials
-        var apiKey = '';
-        var sessionId = '';
-        var token = '';
-        
+
         // Initialize Session Object
         var session = OT.initSession(apiKey, sessionId);
                 

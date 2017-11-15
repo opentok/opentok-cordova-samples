@@ -33,7 +33,7 @@
 
 Before running the application, you need to configure it to use the API key for your OpenTok project, along with an OpenTok session ID and token. For test purposes, you can get a test session ID and token for your project at your TokBox account page.
 
-Open the wwww/js/index.js file and set the `apiKey`, `sessionId`, and `token` values to the API key, session ID, and token:
+Open the wwww/js/config.js file in your project and set the `apiKey`, `sessionId`, and `token` values to the API key, session ID, and token:
 ```
     // Set Credentials
     var apiKey = '';    // Add your API key.
