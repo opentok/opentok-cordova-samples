@@ -1,5 +1,10 @@
 /Basic-Video-Chat/node_modules
 /Basic-Video-Chat/platforms
 /Basic-Video-Chat/plugins
+/Basic-Video-Chat/.DS_Store
+/Signaling/node_modules
+/Signaling/platforms
+/Signaling/plugins
+/Signaling/.DS_Store
 .DS_Store
 *.DS_Store
