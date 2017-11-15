@@ -3,9 +3,11 @@
 ### In this repo, you'll find the following sample applications:
 
 * ##### Basic Video Chat
-  * This sample application shows how to connect to an OpenTok session, publish a stream, and subscribe to a stream in a basic Cordova iOS and Android application.
+  * This sample application shows how to connect to an OpenTok session, publish a stream, and subscribe to a **single stream** in an iOS and Android application.
 * ##### Signaling
-  * This sample application shows how to connect to an OpenTok session and use signaling to create a basic text chat.
+  * This sample application shows how to connect to an OpenTok session and use signaling to create a basic iOS and Android **chat** application.
+* ##### Multiparty-Video-Chat
+  * This sample application shows how to connect to an OpenTok session, publish a stream, and subscribe to **multiple streams** in an iOS and Android application.
 
 ## Prerequisites:
 
