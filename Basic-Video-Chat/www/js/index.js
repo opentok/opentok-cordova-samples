@@ -27,12 +27,7 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-      
-      // Set Credentials
-        var apiKey = '';
-        var sessionId = '';
-        var token = '';
-        
+
         // Initialize Session Object
         var session = OT.initSession(apiKey, sessionId);
         
@@ -40,19 +35,19 @@ var app = {
         var publisher = OT.initPublisher(apiKey, 'publisher');
         
         session.on({
-          streamCreated: (event) => {
+          streamCreated: function(event) {
             session.subscribe(event.stream, 'subscriber');
           },
-          streamDestroyed: (event) => {
+          streamDestroyed: function(event) {
             console.log(`Stream ${event.stream.name} ended because ${event.reason}.`);
           }
         });
         
-        session.connect(token, () => {
-          
+        session.connect(token, function() {
           // publish to the session
           session.publish(publisher);
         });
+        
         this.receivedEvent('deviceready');
     },
 

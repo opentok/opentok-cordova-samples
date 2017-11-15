@@ -42,6 +42,9 @@ var app = {
         session.on({
           streamCreated: function(event) {
             createSubscriber(event.stream, event.stream.streamId);
+          },
+          streamDestroyed: function(event) {
+            console.log(`Stream ${event.stream.name} ended because ${event.reason}.`);
           }
         });
         
