@@ -1,6 +1,6 @@
 ## Exploring the code
 
-#### Connecting to the session
+Connecting to the session
 
 The `OT.initSession()` method initialized an OpenTok Session object, using the session ID and token (see [Configuring the application](https://github.com/msach22/opentok-cordova-samples#configuring-the-application)):
 ```
@@ -50,7 +50,7 @@ The Session object dispatches a `streamCreated` event when a new stream (other t
     // Subscribe to a newly created stream
     session.on({
       streamCreated: (event) => {
-        session.subscribe(event.stream, 'subscriber');
+        // subscribe to stream
       }
     });
 ```
@@ -60,3 +60,7 @@ The Stream object to which we are subscribing to
 The target DOM element or DOM element ID (optional) for placement of the subscriber video
 A set of properties (optional) that customize the appearance of the subscriber view
 An optional completion handler.
+
+#### Helper Function(s)
+
+The `createSubscriber()` function is where we add the subscriber video to the DOM.
