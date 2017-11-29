@@ -62,6 +62,18 @@ For testing, you can use a session ID and token generated at your TokBox account
 
 #### For iOS
 
+##### Camera & Microphone Permissions
+
+Add the following to the project's `info.plist` file:
+ ```
+ <key>NSCameraUsageDescription</key>
+ <string>The camera is required to publish video</string>
+ <key>NSMicrophoneUsageDescription</key>
+ <string>The microphone is required to publish audio</string>
+ ```
+Make sure to update the description of each permission request to what best fits your needs.
+
+
 1. In the root directory of the sample project, run `cordova prepare ios`.
 2. Open Xcode.
 3. Click `Open another project...`
