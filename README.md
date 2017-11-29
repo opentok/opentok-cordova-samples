@@ -73,7 +73,6 @@ Add the following to the project's `info.plist` file:
  ```
 Make sure to update the description of each permission request to what best fits your needs.
 
-
 1. In the root directory of the sample project, run `cordova prepare ios`.
 2. Open Xcode.
 3. Click `Open another project...`
