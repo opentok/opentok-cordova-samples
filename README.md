@@ -1,4 +1,4 @@
-# OpenTok Cordova Basic Video Chat
+# OpenTok Cordova Samples
 
 ### In this repo, you'll find the following sample applications:
 
@@ -23,17 +23,19 @@
 
 1. Clone this repo
 
-2. In your terminal run: `$ cordova platform add ios` // This will add iOS your project
+2. Change direcory to the sample project
 
-3. In your terminal run: `$ cordova platform add android` // This will add Android your project
+3. In your terminal run: `$ cordova platform add ios` // This will add iOS your project
 
-4. Next run: `$ npm install`
+4. In your terminal run: `$ cordova platform add android` // This will add Android your project
+
+5. Next run: `$ npm install`
 
 ## Configuring the application
 
 Before running the application, you need to configure it to use the API key for your OpenTok project, along with an OpenTok session ID and token. For test purposes, you can get a test session ID and token for your project at your TokBox account page.
 
-Open the wwww/js/config.js file in your project and set the `apiKey`, `sessionId`, and `token` values to the API key, session ID, and token:
+Open the `wwww/js/config.js` file in your project and set the `apiKey`, `sessionId`, and `token` values to the API key, session ID, and token:
 ```
     // Set Credentials
     var apiKey = '';    // Add your API key.
@@ -52,22 +54,13 @@ For testing, you can use a session ID and token generated at your TokBox account
 2. Open Android Studio.
 3. Click `Open an existing Android Studio project`.
 4. Navigate to the `platforms/android` subdirectory of this project and select the `build.gradle` file.
-5. Click run.
+5. Click `OK` to use the Gradle wrapper.
+6. Click run.
 
 ##### Note: If you're using the simulator, you will see a black container for your publisher since the simulator doesn't have a camera.
 
 #### For iOS
 
-##### Camera & Microphone Permissions
-
-Add the following to the `OpenTokCordova.xcodeproj` project's `info.plist` file:
-```
-<key>NSCameraUsageDescription</key>
-<string>The camera is required to publish video</string>
-<key>NSMicrophoneUsageDescription</key>
-<string>The microphone is required to publish audio</string>
-Make sure to update the description of each permission request to what best fits your needs.
-```
 1. In the root directory of the sample project, run `cordova prepare ios`.
 2. Open Xcode.
 3. Click `Open another project...`
