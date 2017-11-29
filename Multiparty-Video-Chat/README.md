@@ -2,7 +2,7 @@
 
 Connecting to the session
 
-The `OT.initSession()` method initialized an OpenTok Session object, using the session ID and token (see [Configuring the application](https://github.com/msach22/opentok-cordova-samples#configuring-the-application)):
+The `OT.initSession()` method initialized an OpenTok Session object, using the session ID and token (see [Configuring the application](https://github.com/opentok/opentok-cordova-samples#configuring-the-application)):
 ```
   // Initialize Session Object
   var session = OT.initSession(apiKey, sessionId);
