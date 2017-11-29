@@ -10,8 +10,8 @@
     "author": "Manik Sachdeva",
     "license": "Apache-2.0",
     "dependencies": {
-        "Cordova-Plugin-OpenTok": "git+https://github.com/msach22/cordova-plugin-opentok.git",
-        "com.tokbox.cordova.opentok": "https://github.com/msach22/cordova-plugin-opentok",
+        "Cordova-Plugin-OpenTok": "git+https://github.com/opentok/cordova-plugin-opentok.git",
+        "com.tokbox.cordova.opentok": "https://github.com/opentok/cordova-plugin-opentok",
         "cordova-android": "^6.2.3",
         "cordova-ios": "^4.4.0",
         "cordova-plugin-whitelist": "^1.3.3"
