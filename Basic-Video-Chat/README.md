@@ -29,15 +29,13 @@ The Session object dispatches a `streamDestroyed` event when the stream is destr
 
 Upon successfully connecting to the OpenTok session (see the previous section), the application initializes an OpenTok Publisher object and publishes an audio-video stream to the session. This is done inside the completion handler for the `connect()` method, since you should only publish to the session once you are connected to it.
 
-The Publisher object is initialized as shown below. The `OT.initPublisher()` method takes three parameters:
-
-The OpenTok API key -- Note: the `OT.initPublisher()` method of the OpenTok Cordova plug-in requires an API key. This differs from the OpenTok.js library for the web, which does not include this parameter.
+The Publisher object is initialized as shown below. The `OT.initPublisher()` method takes two parameters:
 
 The target DOM element or DOM element ID for placement of the publisher video
 
 A set of publisher properties (optional)
 ```
-  var publisher = OT.initPublisher(apiKey, 'publisher');
+  var publisher = OT.initPublisher('publisher');
 ```
 Once the Publisher object is initialized, we publish to the session using the `publish()` method of the Session object:
 ```
