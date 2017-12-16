@@ -12,40 +12,49 @@
 
 ## Prerequisites:
 
-1. Node.js
+1. Install [node.js](https://nodejs.org/)
 
-2. Cordova: `sudo npm install -g cordova`
+2. Install Cordova: `npm install -g cordova`
 
-3. Xcode
+3. Install and update [Xcode](https://developer.apple.com/xcode/) (you will need a Mac)
 
-4. Android Studio
+4. Install and update [Android Studio](https://developer.android.com/studio/index.html)
 
 ##### Note: Please make sure to run the commands in the same order as below
 
 1. Clone this repo
 
-2. Change direcory to the sample project
+2. In your terminal, change your directory to the root of the sample project you want to run.
 
-3. In your terminal run: `$ cordova platform add ios` // This will add iOS your project
+3. Run the command:
+ 
+        npm install
+    to install required node modules
 
-4. In your terminal run: `$ cordova platform add android` // This will add Android your project
+4. Run the command:
 
-5. Next run: `$ npm install`
+        cordova platform add ios
+    to add iOS your project
+
+5. Run:
+
+        cordova platform add android
+    to add Android your project
 
 ## Configuring the application
 
-Before running the application, you need to configure it to use the API key for your OpenTok project, along with an OpenTok session ID and token. For test purposes, you can get a test session ID and token for your project at your TokBox account page.
+Before running the application, you need to configure it to use the API key for your OpenTok project, along with an OpenTok session ID and token. For development purposes, you can obtain a session ID and token by navigating to your [TokBox account](https://tokbox.com/account/#/) page, selecting a project, and scrolling to the bottom of the page where it says `Generate Token`.
 
-Open the `wwww/js/config.js` file in your project and set the `apiKey`, `sessionId`, and `token` values to the API key, session ID, and token:
+Open the `wwww/js/config.js` file in your project and set the `apiKey`, `sessionId`, and `token` values to the API key, session ID, and token you obtained from your TokBox account:
 ```
-    // Set Credentials
-    var apiKey = '';    // Add your API key.
-    var sessionId = ''; // Add the session ID.
-    var token = '';     // Add the token.
+// Set Credentials
+var apiKey = '';    // Add your API key.
+var sessionId = ''; // Add the session ID.
+var token = '';     // Add the token.
 ```
 An OpenTok session connects different clients letting them share audio-video streams and send messages. Clients in the same session can include iOS, Android, and web browsers.
 
-For testing, you can use a session ID and token generated at your TokBox account page. However, the final application should obtain these values using the OpenTok server SDKs. For more information, see the OpenTok developer guides on session creation and token creation.
+For testing, you can use a session ID and token generated at your TokBox account page. However, the final application should obtain these values using the OpenTok server SDKs. For more information, see the OpenTok [server SDK guides](https://tokbox.com/developer/sdks/server/) on session and token creation.
 
 ## Running the application
 
