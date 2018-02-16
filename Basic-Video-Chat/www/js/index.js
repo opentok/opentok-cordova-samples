@@ -32,7 +32,7 @@ var app = {
         var session = OT.initSession(apiKey, sessionId);
         
         // initialize a publisher
-        var publisher = OT.initPublisher(apiKey, 'publisher');
+        var publisher = OT.initPublisher('publisher');
         
         session.on({
           streamCreated: function(event) {
