@@ -28,7 +28,7 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
       
-        var publisher = OT.initPublisher(apiKey, 'publisher');
+        var publisher = OT.initPublisher('publisher');
         var session = OT.initSession(apiKey, sessionId);
         
         function createSubscriber(stream, streamId) {
