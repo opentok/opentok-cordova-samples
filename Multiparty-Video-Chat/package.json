@@ -1,7 +1,7 @@
 {
     "name": "OTCordovaMultiparty",
     "displayName": "OTCordovaMultiparty",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "A sample Apache Cordova application that uses the OpenTok API to create a multiparty video chat.",
     "main": "index.js",
     "scripts": {
