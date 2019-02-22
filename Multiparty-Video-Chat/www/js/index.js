@@ -45,11 +45,16 @@ var app = {
           },
           streamDestroyed: function(event) {
             console.log(`Stream ${event.stream.name} ended because ${event.reason}.`);
+          },
+          sessionConnected: function(event) {
+            session.publish(publisher);
           }
         });
         
-        session.connect(token, function() {
-          session.publish(publisher);
+        session.connect(token, function(error) {
+          if (error) {
+            console.log(`There was an error connecting to the session: ${error}`);
+          }
         });
         
         this.receivedEvent('deviceready');

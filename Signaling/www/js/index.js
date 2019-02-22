@@ -63,8 +63,10 @@ var app = {
           }
         });
         
-        session.connect(token, function () {
-          setEventListener();
+        session.connect(token, function (error) {
+          if (!error) {
+            setEventListener();
+          }
         });
         
         this.receivedEvent('deviceready');
