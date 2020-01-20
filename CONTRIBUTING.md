@@ -6,9 +6,9 @@ If you're interested in contributing to this project, here are a few ways to do 
     -  If you find a bug, please first report it using Github Issues.
     -  Issues that have already been identified as a bug will be labelled `bug`.
     -  If you'd like to submit a fix for a bug, send a Pull Request from your own fork and mention the Issue number.
-        +  Include a test that isolates the bug and verifies that it was fixed.
+
 *  New Features
-    -  If you'd like to add a feature to the library that doesn't already exist, feel free to describe the feature in a new Github Issue.
+    -  If you'd like to add a feature to the samples that doesn't already exist, feel free to describe the feature in a new Github Issue.
     -  Issues that have been identified as a feature request will be labelled `enhancement`.
     -  If you'd like to implement the new feature, please wait for feedback from the project maintainers before spending too much time writing the code. In some cases, `enhancement`s may not align well with the project objectives at the time.
 *  Documentation & Miscellaneous
@@ -21,7 +21,6 @@ If you're interested in contributing to this project, here are a few ways to do 
 
 For a contribution to be accepted:
 
-*  Code must follow existing styling conventions
 *  Commit messages must be descriptive. Related issues should be mentioned by number.
 
 If the contribution doesn't meet these criteria, a maintainer will discuss it with you on the Issue. You can still continue to add more commits to the branch you have sent the Pull Request from.
@@ -37,5 +36,4 @@ If the contribution doesn't meet these criteria, a maintainer will discuss it wi
 
 ## Development Guidelines
 
-1. Follow [installation guidelines](README.md).
-2. Modify App.js in root folder.
+* Follow [installation guidelines](README.md).
