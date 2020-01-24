@@ -1,7 +1,5 @@
 # OpenTok Cordova Samples
 
-![OpenTok Labs](https://d26dzxoao6i3hh.cloudfront.net/items/0U1R0a0e2g1E361H0x3c/Image%202017-11-22%20at%2012.16.38%20PM.png?v=2507a2df)
-
 ### In this repo, you'll find the following sample applications:
 
 * ##### Basic Video Chat
@@ -91,3 +89,10 @@ Make sure to update the description of each permission request to what best fits
 6. Run.
 
 ##### Note: If you're using the simulator, you will see a simulation for your publisher since the simulator doesn't have a camera.
+
+## Contributing
+
+If you make changes to the project that you would like to contribute back
+then please follow the [contributing guidelines](CONTRIBUTING.md).
+All contributions are greatly appreciated!
+
